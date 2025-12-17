@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Marco‑Kitchen | Fast Food</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: #fff8f0;
+      color: #333;
+    }
+    header {
+      background: #c0392b;
+      color: white;
+      padding: 15px 30px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 26px;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin-left: 20px;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 50px 30px;
+    }
+    .hero {
+      background: linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1550547660-d9450f859349');
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      padding: 100px 30px;
+    }
+    .hero h2 {
+      font-size: 40px;
+      margin-bottom: 20px;
+    }
+    .hero p {
+      font-size: 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+    .product {
+      background: white;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+      padding: 20px;
+      text-align: center;
+    }
+    .product h3 {
+      margin-bottom: 10px;
+      color: #c0392b;
+    }
+    .product p {
+      margin: 5px 0;
+    }
+    .price {
+      font-weight: bold;
+      font-size: 18px;
+    }
+    form {
+      max-width: 500px;
+      margin: auto;
+      background: white;
+      padding: 30px;
+      border-radius: 10px;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border-radius: 5px;
+      border: 1px solid #ccc;
+    }
+    form button {
+      width: 100%;
+      padding: 12px;
+      background: #c0392b;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    form button:hover {
+      background: #a93226;
+    }
+    footer {
+      background: #333;
+      color: white;
+      text-align: center;
+      padding: 25px 15px;
+    }
+    .socials {
+      margin-top: 10px;
+      display: flex;
+      justify-content: center;
+      gap: 20px;
+    }
+    .socials a {
+      color: white;
+      font-size: 22px;
+      text-decoration: none;
+      border: 2px solid white;
+      width: 40px;
+      height: 40px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 50%;
+      transition: 0.3s;
+    }
+    .socials a:hover {
+      background: white;
+      color: #333;
+    }
+    .whatsapp {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25d366;
+      color: white;
+      padding: 15px 20px;
+      border-radius: 50px;
+      font-weight: bold;
+      text-decoration: none;
+      box-shadow: 0 4px 8px rgba(0,0,0,0.3);
+      z-index: 1000;
+    }
+    .whatsapp:hover {
+      background: #1ebe5d;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Marco‑Kitchen</h1>
+  <nav>
+    <a href="#accueil">Accueil</a>
+    <a href="#produits">Produits</a>
+    <a href="#contact">Contact</a>
+  </nav>
+</header>
+
+<section id="accueil" class="hero">
+  <h2>Bienvenue chez Marco‑Kitchen</h2>
+  <p>
+    Marco‑Kitchen, c’est le goût authentique du fast‑food moderne.
+    Des recettes savoureuses, préparées avec passion, rapidité et hygiène.
+    Ici, chaque bouchée est une explosion de plaisir.
+    Venez découvrir une cuisine rapide, chaude et irrésistible, pensée pour tous les amoureux du bon goût.
+  </p>
+</section>
+
+<section id="produits">
+  <h2>Nos Produits</h2>
+  <div class="products">
+
+    <div class="product">
+      <h3>Sandwich</h3>
+      <p>Sandwich chaud et savoureux, prêt à consommer</p>
+      <p class="price">3 000 FC</p>
+    </div>
+
+    <div class="product">
+      <h3>Chawarma viande</h3>
+      <p>Chawarma bien garni à la viande, goût intense</p>
+      <p class="price">8 500 FC</p>
+    </div>
+
+    <div class="product">
+      <h3>Chawarma simple</h3>
+      <p>Chawarma léger et délicieux</p>
+      <p class="price">5 500 FC</p>
+    </div>
+
+    <div class="product">
+      <h3>Hamburger</h3>
+      <p>Hamburger juteux, pain moelleux et viande grillée</p>
+      <p class="price">10 000 FC</p>
+    </div>
+
+    <div class="product">
+      <h3>Spicy Burger</h3>
+      <p>Burger épicé pour les amateurs de sensations fortes</p>
+      <p class="price">18 000 FC</p>
+    </div>
+
+    <div class="product">
+      <h3>Classic Cheese</h3>
+      <p>Burger classique au fromage fondant</p>
+      <p class="price">8 000 FC</p>
+    </div>
+
+    <div class="product">
+      <h3>BBQ Burger</h3>
+      <p>Burger sauce barbecue, goût fumé exceptionnel</p>
+      <p class="price">13 000 FC</p>
+    </div>
+
+    <div class="product">
+      <h3>Frites simples</h3>
+      <p>Frites dorées et croustillantes</p>
+      <p class="price">2 000 FC</p>
+    </div>
+
+    <div class="product">
+      <h3>Frites épicées</h3>
+      <p>Frites relevées avec épices spéciales</p>
+      <p class="price">2 500 FC</p>
+    </div>
+
+    <div class="product">
+      <h3>M‑Vita (Spécialité)</h3>
+      <p>Mélange angélique de banane, œuf et lait</p>
+      <p class="price">5 500 FC</p>
+    </div>
+
+  </div>
+</section>
+
+<section id="contact">
+  <p style="text-align:center; font-weight:bold; margin-bottom:20px;">📍 Adresse : Av. Okapi, Q/ Congo, C/ Ngaliema — Camp Okapi</p>
+  <h2>Contactez‑nous</h2>
+  <form action="https://formsubmit.co/mabandwemarco@gmail.com" method="POST">
+    <input type="text" name="Nom" placeholder="Votre nom" required />
+    <input type="email" name="Email" placeholder="Votre email" required />
+    <textarea name="Message" rows="5" placeholder="Votre message" required></textarea>
+    <input type="hidden" name="_subject" value="Nouveau message – Marco-Kitchen" />
+    <input type="hidden" name="_captcha" value="false" />
+    <input type="hidden" name="_template" value="table" />
+    <button type="submit">Envoyer</button>
+  </form>
+</section>
+
+<footer>
+  <p>© 2025 Marco‑Kitchen | Fast Food de qualité</p>
+  <div class="socials">
+    <a href="#" title="Facebook">F</a>
+    <a href="#" title="Instagram">I</a>
+    <a href="#" title="TikTok">T</a>
+    <a href="#" title="YouTube">Y</a>
+  </div>
+</footer>
+
+<a href="https://wa.me/243852591433" target="_blank" class="whatsapp">
+  💬 WhatsApp
+</a>
+
+</body>
+</html>
